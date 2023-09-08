@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.slide-wrapper {
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+}
+
+.slide:hover {
+    will-change: transform;
+}
+
+
+.slide li {
+    flex-shrink: 0;
+    width: 80vw;
+    max-width: 800px;
+    margin: 20px;
+    overflow: hidden;
+    box-sizing: 0 2px 4px rgba(0, 0, 0, .4) ;
+    border-radius: 4px;
+    opacity: .8;
+    transform: scale(.8);
+    transition: .4s;
+}
+
+
+.slide li.active {
+    opacity: 1;
+    transform: scale(1);
+}
